@@ -3,7 +3,7 @@ pipeline {
 
    environment{
         ENv_URL         = "pipeline.google.com"                    // Global variable
-        SSHCRD         = credentials('SSH_CRD')
+        SSHCRD          = credentials('SSH_CRD')
          }
 
    stages{
@@ -14,7 +14,8 @@ pipeline {
           echo Devops training
           echo Aws training
           echo The name of the URL is ${ENV_URL}
-
+          
+          env
           '''
 
         }
