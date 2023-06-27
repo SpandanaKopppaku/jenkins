@@ -2,7 +2,8 @@ pipeline {
    agent any
 
    environment{
-    
+        ENv_URL = "pipeline.google.com"
+
    }
 
    stages{
@@ -13,6 +14,7 @@ pipeline {
           sh '''
           echo Devops training
           echo Aws training
+          echo The name of the URL is ${ENV_URL}
 
           '''
 
@@ -23,6 +25,7 @@ pipeline {
         steps {
 
             echo "This is stage two"
+            echo "The name of the URL is ${ENV_URL}"
 
         }
     }
