@@ -1,6 +1,10 @@
 pipeline {
    agent any
 
+   environment{
+    
+   }
+
    stages{
 
     stage('Stage one') {
@@ -9,7 +13,7 @@ pipeline {
           sh '''
           echo Devops training
           echo Aws training
-          
+
           '''
 
         }
