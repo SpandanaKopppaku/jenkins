@@ -2,9 +2,10 @@ pipeline {
    agent any
 
    environment{
+       
         ENv_URL = "pipeline.google.com"
 
-   }
+         }
 
    stages{
 
