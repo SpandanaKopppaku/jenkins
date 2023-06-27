@@ -3,7 +3,7 @@ pipeline {
 
    environment{
        
-        ENv_URL = "pipeline.google.com"
+        ENv_URL = "pipeline.google.com"                    // Global variable
 
          }
 
