@@ -9,6 +9,7 @@ pipeline {
           sh '''
           echo Devops training
           echo Aws training
+          
           '''
 
         }
