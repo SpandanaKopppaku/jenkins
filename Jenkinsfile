@@ -22,6 +22,11 @@ pipeline {
     }
     
     stage('Stage two') {
+        environment{
+            
+             ENv_URL = "pipeline.google.com"    //stage variable
+
+                }
         steps {
 
             echo "This is stage two"
