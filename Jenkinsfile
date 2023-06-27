@@ -6,7 +6,10 @@ pipeline {
     stage('Stage one') {
         steps {
 
-            echo "This is stage one"
+          sh '''
+          echo Devops training
+          echo Aws training
+          '''
 
         }
     }
