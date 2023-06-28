@@ -51,7 +51,10 @@ pipeline {
         }
     }
     stage('Stage three') {
-        when { branch 'dev' }
+        when { 
+            branch 'dev' 
+            changeset "**/*.js"
+             }
         steps {
 
             sh '''
