@@ -39,7 +39,7 @@ pipeline {
                     }
                 }
             }
-
+         }
     stage('Stage one') {
         steps {
 
@@ -105,5 +105,5 @@ pipeline {
         }
    }
 
-}
-   }
+    }
+}  
