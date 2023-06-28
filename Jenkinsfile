@@ -50,8 +50,8 @@ pipeline {
 
         }
     }
-
     stage('Stage three') {
+        when { branch 'dev' }
         steps {
 
             sh '''
@@ -60,6 +60,15 @@ pipeline {
             '''
             
 
+        }
+    }
+    stage('Stage four') {
+        steps {
+
+            sh '''
+            echo -e "\\e[32m hai"
+            echo "This is stage three"
+            '''
         }
     }
 
